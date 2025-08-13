@@ -1,3 +1,24 @@
+<?php
+
+$person= "Tithe";
+
+
+
+
+function greet($person){
+$x= $person ? $person : "Guest";
+
+echo "Hello $x";
+}
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +29,10 @@
 <body>
     <h1>Assign default name using ternary</h1> 
 
-<form action="divisible.php" method="GET">
+<form action="defaultName.php" method="GET">
 
-    <input type="text" name="number" placeholder="give the number..."><br><br>
-    <input type="submit" name="Submit" style="color: green;">
+    <input type="text" name="name" placeholder="give your name..."><br><br>
+    <input type="submit" name="btn_submit" style="color: green;">
 
 </form>
 </body>

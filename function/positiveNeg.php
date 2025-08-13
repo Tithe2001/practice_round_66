@@ -23,6 +23,12 @@
 if(isset($_GET ["Submit"])){
     $x= $_GET["number"];
 
+positNeg( $x);
+
+}
+
+
+function positNeg( $x){
 $result=null;
 if( $x>=0){
 $result= "$x is a positive number";
@@ -32,7 +38,6 @@ $result= "$x is a positive number";
 }
 
 echo "<h2>$result .</h2>";
-
 }
 
 
