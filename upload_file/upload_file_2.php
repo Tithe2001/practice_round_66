@@ -33,9 +33,9 @@ if (isset($_POST["btnSubmit"])){
 
    //if folder is not created creat a folder
 
-   if(!is_dir($folder)){
-    mkdir($folder, 0777, true);
-   }
+//    if(!is_dir($folder)){
+//     mkdir($folder, 0777, true);
+//    }
 
 
    //move file to folder

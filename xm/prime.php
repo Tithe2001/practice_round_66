@@ -20,15 +20,24 @@
 
 <?php
 
-if(isset($_GET["Submit"]))
-    $n= $_GET["number"];
+if(isset($_GET["Submit"])){
+$n= $_GET["number"];
 
+$result=null;
+for($i=2; $i<=$n; $i++){
 
-if(){
-
-
-    
+    if($n % $i ===0){
+        $result= "$n is a prime number";
+    }else {
+    $result= "$n is  not a prime number";
 }
+}
+echo "<h2>$result</h2>";
+}
+    
+
+
+
 
 
 ?>
